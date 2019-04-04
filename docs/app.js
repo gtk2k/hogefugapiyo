@@ -39,7 +39,7 @@ class Peer {
         netConfig.IceServers = this.opt.iceServers || [
             { urls: 'stun:stun.l.google.com:19302' }
         ];
-        netConfig.SignalingUrl = this.opt.SignalingUrl || 'ws://172.16.1.49:12777';
+        netConfig.SignalingUrl = this.opt.SignalingUrl || 'wss://172.16.1.49:12777';
 
         const mediaConfig = new awrtc.MediaConfig();
         mediaConfig.Audio = this.opt.audio || false;
